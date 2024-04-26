@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "back-porti": {
+    "web-portifolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/back-porti",
+            "outputPath": "dist/web-portifolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -87,10 +87,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "back-porti:build:production"
+              "buildTarget": "web-portifolio:build:production"
             },
             "development": {
-              "buildTarget": "back-porti:build:development"
+              "buildTarget": "web-portifolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +98,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "back-porti:build"
+            "buildTarget": "web-portifolio:build"
           }
         },
         "test": {
