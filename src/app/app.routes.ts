@@ -7,6 +7,6 @@ export const routes: Routes = [
   {
     path: '',
     component: AppLayoutComponent,
-    children: [{ path: 'home', component: HomeComponent, title: 'EltonClaus' }],
+    children: [{ path: '', component: HomeComponent, title: 'EltonClaus' }],
   },
 ];
