@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #3b57e74f !important;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #9ba5b8, #689aff);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6194fb !important;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #6194fb !important;
+}
+
+@layer reset {
+  button,
+  input {
+    /* CSS to Reset */
+  }
+}
+
+:host ::ng-deep {
+  .product-item {
+    .product-item-content {
+      border: 1px solid var(--surface-d);
+      border-radius: 3px;
+      margin: 0.3rem;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .product-image {
+      width: 50%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+  }
+}
