@@ -2,6 +2,7 @@
   <div class="ml-[19.7rem] md:ml-[44.8rem]" *ngIf="isMenuOpen">
     <div class="block xl:hidden">
       <div
+        (click)="closeMenuMobile()"
         class="flex flex-col items-center mt-[2.7rem] p-4 w-24 gap-5 md:gap-9 bg-slate-200 absolute"
       >
         <a #home (click)="scroll('home')" class="hover:text-slate-600">Home</a>

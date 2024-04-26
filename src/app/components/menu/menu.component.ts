@@ -58,4 +58,12 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  closeMenuMobile() {
+    if (this.isMenuOpen) {
+      this.isMenuOpen = false;
+    } else {
+      console.log('nada feito');
+    }
+  }
 }
